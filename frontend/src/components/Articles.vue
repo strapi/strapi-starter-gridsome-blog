@@ -15,6 +15,7 @@
 
 <script>
 import Card from "~/components/Card"
+
 export default {
   props: {
     articles: Array
