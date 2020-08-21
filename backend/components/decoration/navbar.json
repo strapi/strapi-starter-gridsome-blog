@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_decoration_navbars",
+  "info": {
+    "name": "Navbar",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "navText": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
