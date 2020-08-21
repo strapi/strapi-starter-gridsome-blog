@@ -1,4 +1,4 @@
-# Strapi Starter Gridsome Blog v2
+# Strapi Starter Gridsome Blog
 
 Gridsome starter for creating an great blog with Strapi.
 
@@ -27,7 +27,7 @@ To deploy the Gridsome blog you'll need:
   - Wait for your heroku instance to be up and running before deploying your Gridsome Blog
   - Vercel will ask you the root directory of the project to deploy which is **frontend**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fstrapi%2Fstrapi-starter-gridsome-blog-v2&env=GRIDSOME_STRAPI_URL&envDescription=Enter%20the%20url%20of%20your%20Strapi%20API%20without%20the%20trailing%20slash&project-name=my-strapi-starter-gatsby-blog)  
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fstrapi%2Fstrapi-starter-gridsome-blog&env=GRIDSOME_STRAPI_URL&envDescription=Enter%20the%20url%20of%20your%20Strapi%20API%20without%20the%20trailing%20slash&project-name=my-strapi-starter-gatsby-blog)  
 
   - Select the repository you want to deploy, here it's the `strapi-starter-gridsome-blog`
   - Select the root directory of your frontend which is `frontend` here
