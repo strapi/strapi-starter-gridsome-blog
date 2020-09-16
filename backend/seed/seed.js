@@ -48,15 +48,15 @@ module.exports = {
       "created_at": "2020-07-08T13:21:45.889Z",
       "updated_at": "2020-07-08T13:21:45.889Z",
       "Seo": {
-        "metaTitle": "My personal Strapi & Gatsby blog",
-        "metaDescription": "Discover my Seo friendly blog built with Strapi and Gatsby. \nThis blog use gatsby image, single type and components and schedule system",
+        "metaTitle": "My personal Strapi & Gridsome blog",
+        "metaDescription": "Discover my Seo friendly blog built with Strapi and Gridsome. \nThis blog use gatsby image, single type and components and schedule system",
         "shareImage": {
           "alt": "default-image",
           "image": null
         }
       },
       "Nav": {
-        "navText": "Strapi & Gatsby blog"
+        "navText": "Strapi & Gridsome blog"
       },
       "Hero": {
         "HeroText": "My blog"
