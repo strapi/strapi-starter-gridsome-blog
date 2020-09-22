@@ -1,28 +1,35 @@
 <template>
-<div>
-  <div class="uk-child-width-1-2" uk-grid>
-    <div>
-      <Card v-for="article in leftArticles" :article="article" :key="article.id" />
-    </div>
-    <div>
-      <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
-        <Card v-for="article in rightArticles" :article="article" :key="article.id" />
+  <div>
+    <div class="uk-child-width-1-2" uk-grid>
+      <div>
+        <Card
+          v-for="article in leftArticles"
+          :article="article"
+          :key="article.id"
+        />
+      </div>
+      <div>
+        <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+          <Card
+            v-for="article in rightArticles"
+            :article="article"
+            :key="article.id"
+          />
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
-import Card from "~/components/Card"
-const a = 0
-a = 2
+import Card from "~/components/Card";
+
 export default {
   props: {
-    articles: Array
+    articles: Array,
   },
   components: {
-    Card
+    Card,
   },
   computed: {
     leftArticlesCount() {
@@ -33,7 +40,7 @@ export default {
     },
     rightArticles() {
       return this.articles.slice(this.leftArticlesCount, this.articles.length);
-    }
-  }
+    },
+  },
 };
 </script>

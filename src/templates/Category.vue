@@ -11,44 +11,44 @@
 </template>
 
 <page-query>
-  query ($slug: String!) {
-      strapi {
-        categories(where: { slug: $slug }) {
+query($slug: String!) {
+  strapi {
+    categories(where: { slug: $slug }) {
+      name
+      articles(where: { status: "published" }) {
+        id
+        title
+        content
+        slug
+        image {
+          url
+        }
+        category {
           name
-          articles(where: { status: "published" }) {
-            id
-            title
-            content
-            slug
-            image {
-              url
-            }
-            category {
-              name
-            }
-            user {
-              username
-              image {
-                url
-              }
-            }
+        }
+        author {
+          name
+          picture {
+            url
           }
         }
-  	  }
+      }
     }
+  }
+}
 </page-query>
 
 <script>
-import Articles from '~/components/Articles'
+import Articles from "~/components/Articles";
 
 export default {
   components: {
-    Articles
+    Articles,
   },
   metaInfo() {
     return {
       title: this.$page.strapi.categories[0].name.toUpperCase(),
-    }
-  }
-}
+    };
+  },
+};
 </script>

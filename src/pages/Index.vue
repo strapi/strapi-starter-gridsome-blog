@@ -1,55 +1,91 @@
 <template>
-<Layout>
-
-  <div class="uk-section">
-    <div class="uk-container uk-container-large">
-      <h1>{{ $page.strapi.homepage.Hero.HeroText }}</h1>
-      <Articles :articles="$page.strapi.articles" />
+  <Layout>
+    <div class="uk-section">
+      <div class="uk-container uk-container-large">
+        <h1>{{ $page.strapi.homepage.hero.title }}</h1>
+        <Articles :articles="$page.strapi.articles" />
+      </div>
     </div>
-  </div>
-
-</Layout>
+  </Layout>
 </template>
 
 <page-query>
-  query {
-    strapi {
-      homepage {
-        Hero {
-          HeroText
-        }
+query {
+  strapi {
+    global {
+      siteName
+      favicon {
+        url
       }
-      articles(where: {status: "published"}) {
-        slug
-        title
-        category {
-          name
-        }
-        image {
+      defaultSeo {
+        metaTitle
+        metaDescription
+        shareImage {
           url
-        }
-        user {
-          username
-          image {
-            url
-          }
         }
       }
     }
-  }
-</page-query>
-
-<script>
-import Articles from '~/components/Articles'
-
-export default {
-  components: {
-    Articles
-  },
-  metaInfo() {
-    return {
-      title: this.$page.strapi.homepage.Hero.HeroText,
+    homepage {
+      hero {
+        title
+      }
+      seo {
+        metaTitle
+        metaDescription
+        shareImage {
+          url
+        }
+      }
+    }
+    articles(where: { status: "published" }) {
+      slug
+      title
+      category {
+        name
+      }
+      image {
+        url
+      }
+      author {
+        name
+        picture {
+          url
+        }
+      }
     }
   }
 }
+</page-query>
+
+<script>
+import Articles from "~/components/Articles";
+import { getMetaTags } from "~/utils/seo";
+import { getStrapiMedia } from "~/utils/medias";
+
+export default {
+  components: {
+    Articles,
+  },
+  metaInfo() {
+    const { seo, hero } = this.$page.strapi.homepage;
+    const { defaultSeo, favicon } = this.$page.strapi.global;
+
+    // Merge default and article-specific SEO data
+    const fullSeo = {
+      ...defaultSeo,
+      ...seo,
+    };
+
+    return {
+      title: hero.title,
+      meta: getMetaTags(fullSeo),
+      link: [
+        {
+          rel: "favicon",
+          href: getStrapiMedia(favicon.url),
+        },
+      ],
+    };
+  },
+};
 </script>
