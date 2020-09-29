@@ -67,7 +67,7 @@ export default {
     Articles,
   },
   metaInfo() {
-    const { seo, hero } = this.$page.strapi.homepage;
+    const { seo } = this.$page.strapi.homepage;
     const { defaultSeo, favicon } = this.$page.strapi.global;
 
     // Merge default and article-specific SEO data
@@ -77,7 +77,7 @@ export default {
     };
 
     return {
-      title: hero.title,
+      title: fullSeo.metaTitle,
       meta: getMetaTags(fullSeo),
       link: [
         {

@@ -1,12 +1,10 @@
 # Strapi Starter Gridsome Blog
 
-Gridsome starter for creating an great blog with Strapi.
+Gridsome starter for creating a great blog with Strapi.
 
 ![screenshot image](/screenshot.png)
 
-
-This starter allows you to try Strapi with Next with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. Do not hesitate to add new features.
-
+This starter allows you to try Strapi with Gridsome with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. So do not hesitate to add new features and report bugs!
 
 ## Features
 
@@ -14,22 +12,28 @@ This starter allows you to try Strapi with Next with the example of a simple blo
 - 2 Created articles
 - 3 Created categories
 - Responsive design using UIkit
-- The following pages:
-  - "/" to display every articles
-  - "/article/:id" to display one article
-  - "/category/:id" display articles depending on the category
+
+Pages:
+
+- "/" to display every articles
+- "/article/:id" to display one article
+- "/category/:id" display articles depending on the category
 
 ## Getting started
 
-**Backend**
+The easiest way to try this starter is to run it locally on your computer.
+
+First, you'll need to create your own copy of this starter. You can do so by clicking [the "Use this template" button](https://github.com/strapi/strapi-starter-gridsome-blog/generate) on GitHub, and filling the [form](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+
+### Backend
 
 See full instructions [here](https://github.com/strapi/strapi-starter-blog)
 
-**Frontend**
+### Frontend
 
 ```bash
-git clone https://github.com/strapi/strapi-starter-next-blog.git
-cd strapi-starter-next-blog
+git clone https://github.com/strapi/strapi-starter-gridsome-blog.git
+cd strapi-starter-gridsome-blog
 ```
 
 Then start the frontend server:
@@ -44,46 +48,12 @@ npm install
 npm run develop
 ```
 
-If you want to change the default environment variables, create a `.env.local` file like this:
+If you want to change the default environment variables, create a `.env` file like this:
 
 ```
-cp .env.local.example .env.local
+cp .env.example .env
 ```
 
-Clone the repository
+The Gridsome server is running here => [http://localhost:8080](http://localhost:8080)
 
-```
-git clone https://github.com/strapi/strapi-starter-gridsome-blog.git
-cd strapi-starter-gridsome-blog
-```
-
-**Backend**
-
-Install dependencies and run your server
-
-```bash
-# Using yarn
-yarn install
-yarn develop
-
-# Using npm
-npm install
-npm run develop
-```
-
-**Frontend**
-
-```bash
-# Using yarn
-yarn install
-yarn develop
-
-# Using npm
-npm install
-npm run develop
-```
-
-Gridsome server is running here => [http://localhost:8080](http://localhost:8080)
-
-Enjoy this starter
-
+Enjoy this starter!
