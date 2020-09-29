@@ -27,12 +27,14 @@ First, you'll need to create your own copy of this starter. You can do so by cli
 
 ### Backend
 
-See full instructions [here](https://github.com/strapi/strapi-starter-blog)
+Follow the instructions [on this repository](https://github.com/strapi/strapi-starter-blog)
 
 ### Frontend
 
+Clone your repository:
+
 ```bash
-git clone https://github.com/strapi/strapi-starter-gridsome-blog.git
+git clone <your-github-repo-url>
 cd strapi-starter-gridsome-blog
 ```
 
