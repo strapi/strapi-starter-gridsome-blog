@@ -1,3 +1,4 @@
 {
-  "template": "https://github.com/strapi/strapi-template-blog"
+  "template": "https://github.com/strapi/strapi-template-blog",
+  "port": "8080"
 }
