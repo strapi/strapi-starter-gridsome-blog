@@ -37,6 +37,10 @@ export default [
     component: c2
   },
   {
+    path: "/article/a-bug-is-becoming-a-meme-on-the-internet/",
+    component: c1
+  },
+  {
     path: "/category/food/",
     component: c2
   },
