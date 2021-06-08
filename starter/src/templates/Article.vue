@@ -53,7 +53,7 @@ query($slug: String!) {
       title
       description
       content
-      publishedAt
+      published_at
       image {
         url
       }

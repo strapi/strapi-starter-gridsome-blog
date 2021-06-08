@@ -37,7 +37,7 @@ query {
         }
       }
     }
-    articles(where: { status: "published" }) {
+    articles {
       slug
       title
       category {
