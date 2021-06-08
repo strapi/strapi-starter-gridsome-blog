@@ -1,7 +1,7 @@
-const c1 = () => import(/* webpackChunkName: "page--src--templates--article-vue" */ "/Users/remidejuvigny/Strapi/strapi-starter-gridsome-blog/frontend/src/templates/Article.vue")
-const c2 = () => import(/* webpackChunkName: "page--src--templates--category-vue" */ "/Users/remidejuvigny/Strapi/strapi-starter-gridsome-blog/frontend/src/templates/Category.vue")
-const c3 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/remidejuvigny/Strapi/strapi-starter-gridsome-blog/frontend/node_modules/gridsome/app/pages/404.vue")
-const c4 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/remidejuvigny/Strapi/strapi-starter-gridsome-blog/frontend/src/pages/Index.vue")
+const c1 = () => import(/* webpackChunkName: "page--src--templates--article-vue" */ "/Users/markkaylor/2021/starters/strapi-starter-gridsome-blog/starter/src/templates/Article.vue")
+const c2 = () => import(/* webpackChunkName: "page--src--templates--category-vue" */ "/Users/markkaylor/2021/starters/strapi-starter-gridsome-blog/starter/src/templates/Category.vue")
+const c3 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/markkaylor/2021/starters/strapi-starter-gridsome-blog/starter/node_modules/gridsome/app/pages/404.vue")
+const c4 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/markkaylor/2021/starters/strapi-starter-gridsome-blog/starter/src/pages/Index.vue")
 
 export default [
   {
@@ -35,10 +35,6 @@ export default [
   {
     path: "/category/news/",
     component: c2
-  },
-  {
-    path: "/article/a-bug-is-becoming-a-meme-on-the-internet/",
-    component: c1
   },
   {
     path: "/category/food/",

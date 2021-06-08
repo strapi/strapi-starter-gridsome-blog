@@ -15,7 +15,7 @@ query($slug: String!) {
   strapi {
     categories(where: { slug: $slug }) {
       name
-      articles(where: { status: "published" }) {
+      articles {
         id
         title
         content
